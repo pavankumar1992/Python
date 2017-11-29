@@ -4,13 +4,18 @@ Spyder Editor
 
 This is a temporary script file.
 """
+import nltk as nlp
+
 
 def code1():
     t = "Twinkel Twinkle little star, how i wonder what you are?"
     tlist = t.split()
     print(tlist)
-    tokenlist = token1(t)
-    print(tokenlist)
+    manuallist = token1(t)
+    print(manuallist)
+    token = nlp.word_tokenize(t)
+    print(token)
+    
    
 def token(t):
     r = len(t)
